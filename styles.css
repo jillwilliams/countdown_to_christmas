@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url("images/santa.svg");
+    font-family: "Shantell Sans";
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: red;
+    text-shadow: 2px 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* text: countdown to Christmas */
+h2 {
+    font-size: 55px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 50px auto 20px auto;
+}
+
+/* text: 2026 */
+.year {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* <div> for values */
+.countdown {
+    width: 800px;
+    height: 700px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+    
+/* each of the numbers */
+#day {
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    font-size: 45px;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hour {
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 45px;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#minute {
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    font-size: 45px;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#second {
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    font-size: 45px;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown div::before {
+    content: " ";
+    position: absolute;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+    text-align: center; 
+} 
+
+.countdown #day::before {
+    content: "DAYS";
+    margin: 160px auto 0px auto;
+    font-size: 30px;
+}
+
+.countdown #hour::before {
+    content: "HOURS";
+    margin: 160px auto 0px auto;
+    font-size: 30px;
+}
+.countdown #minute::before {
+    content: "MIN";
+    margin: 160px auto 0px auto;
+    font-size: 30px;
+}
+.countdown #second::before {
+    content: "SEC";
+    margin: 160px auto 0px auto;
+    font-size: 30px;
+}  
+
+/* ============================================= */
+@media screen and (max-width: 768px) {
+    /* text: countdown to halloween */
+    h2 {
+        font-size: 35px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 50px auto 20px auto;
+    }
+    .year {
+        text-align: center;
+        font-size: 35px;
+    }
+    /* <div> for values */
+    .countdown {
+        width: 400px;
+        height: 500px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    /* <div> for values */
+    .countdown {
+        width: 400px;
+        height: 500px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .countdown div::before {
+        content: " ";
+        position: absolute;
+        font-size: 20px;
+        text-shadow: 2px 2px 2px black;
+        text-align: center; 
+    }
+    /* each of the numbers */
+    #day {
+        width: 100px;
+        height: 100px;
+        border: 2px solid white;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 50px;
+        text-align: center;
+        background-color: black;
+    }
+    #hour {
+        width: 100px;
+        height: 100px;
+        border: 2px solid white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 50px;
+        text-align: center;
+        background-color: black;
+        margin-left: 4px;
+    }
+    #minute {
+        width: 100px;
+        height: 100px;
+        border: 2px solid white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 50px;
+        text-align: center;
+        background-color: black;
+        margin-left: 4px;
+    }
+    #second {
+        width: 100px;
+        height: 100px;
+        border: 2px solid white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 50px;
+        text-align: center;
+        background-color: black;
+        margin-left: -22px;
+    }
+    .countdown #day::before {
+        content: "DAYS";
+        font-size: 20px;
+        margin: 70px auto 0px auto;
+    }
+    .countdown #hour::before {
+        content: "HOURS";
+        margin: 70px 20px 0px 14px;
+        font-size: 20px;
+    }
+    .countdown #minute::before {
+        content: "MINUTES";
+        margin: 70px 20px 0px 14px;
+        font-size: 20px;
+    }
+    .countdown #second::before {
+        content: "SECONDS";
+        margin: 70px 20px 0px 14px;
+        font-size: 20px;
+    } 
+}
